@@ -34,10 +34,25 @@
     </style>
   </head>
   <body>
+    <audio id="psong" loop>
+      <source src="psong.mp3" type="audio/mpeg" />
+    </audio>
+    <script>
+      document.addEventListener(
+        "click",
+        () => {
+          const audio = document.getElementById("psong");
+          audio.play();
+        },
+        { once: true }
+      );
+    </script>
     <h1>⋆˚✿˖ Pompompurin ⋆˚❀｡</h1>
+
     <script src="index.js"></script>
     <img src="pompompurin.webp" alt="Pompompurin" class="main-image" />
   </body>
+  <p style="margin-top: -25px"><em>(click for music .ᐟ.ᐟ ♬⋆.˚)</em></p>
   <h2>🌻 :: About ˎˊ˗</h2>
   <p>╰┈➤ Test</p>
   <h2>🍯 :: History ˎˊ˗</h2>

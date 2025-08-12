@@ -34,6 +34,19 @@
     </style>
   </head>
   <body>
+    <audio id="msong" loop>
+      <source src="msong.mp3" type="audio/mpeg" />
+    </audio>
+    <script>
+      document.addEventListener(
+        "click",
+        () => {
+          const audio = document.getElementById("msong");
+          audio.play();
+        },
+        { once: true }
+      );
+    </script>
     <h1>‧₊˚♪ My Melody 𝄞₊˚⊹</h1>
     <script src="index.js"></script>
     <img
@@ -42,6 +55,7 @@
       class="main-image"
       style="width: 250px"
     />
+    <p style="margin-top: -25px"><em>(click for music .ᐟ.ᐟ ♬⋆.˚)</em></p>
     <h2>🌷 :: About ˎˊ˗</h2>
     <p>╰┈➤ Test</p>
     <h2>🌸 :: History ˎˊ˗</h2>
