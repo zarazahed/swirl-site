@@ -1,16 +1,38 @@
 .main-image {
   position: fixed;
-  top: 50%;
-  right: 0;
-  width: 100px;
+  right: 200px;
+  width: 300px;
   height: auto;
-  max-width: 200px;
-  transform: translateY(-50%);
+  max-width: 700px;
+  display: inline-block;
   transition: transform 0.3s ease-in-out;
+  transform-origin: center center;
 }
 
 .main-image:hover {
-  transform: translateY(-50%) scale(1.2);
+  transform: scale(1.2);
+  animation: wiggle-scale 1s ease-in-out infinite;
+  animation-delay: 0.3s;
+}
+
+.main-image:not(:hover) {
+  animation: none;
+}
+
+@keyframes wiggle-scale {
+  0%,
+  100% {
+    transform: scale(1.2) rotate(0deg);
+  }
+  25% {
+    transform: scale(1.2) rotate(5deg);
+  }
+  50% {
+    transform: scale(1.2) rotate(-5deg);
+  }
+  75% {
+    transform: scale(1.2) rotate(5deg);
+  }
 }
 
 .options {
