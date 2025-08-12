@@ -25,19 +25,51 @@
     </style>
   </head>
   <body>
-    <script src="index.js"></script>
+    <audio id="bg-music" loop>
+      <source src="audio.mp3" type="audio/mpeg" />
+    </audio>
+    <script>
+      document.addEventListener(
+        "click",
+        () => {
+          const audio = document.getElementById("bg-music");
+          audio.play();
+        },
+        { once: true }
+      );
+    </script>
+
+    <img
+      id="cover"
+      src="cover.png"
+      style="
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        z-index: 9999;
+        cursor: pointer;
+      "
+      onclick="this.style.display='none'"
+    />
 
     <h1>⋆⭒˚.⋆ 𐙚 ̊ My Favourite Sanrio Characters ⋆𐙚₊˚⊹♡</h1>
 
     <p>
-      ⋮ ⌗ ┆ Welcome! This is a website showcasing information about three of my
+      :: ⌗ ┆ Welcome! This is a website showcasing information about three of my
       favourite sanrio characters!! :3
     </p>
+    <p>
+      :: ⊱ ۫ ׅ ✧ Explore to learn more about My Melody, Pompompurin, and
+      Cinnamoroll!
+    </p>
+    <br />
     <p style="text-align: center">
       𐔌 . ⋆ <em>Click on the images below to learn more about them</em> .ᐟ.ᐟ ֹ ₊
       ꒱
     </p>
-
     <div class="options">
       <div class="option">
         <a href="melody.html"><img src="selectable image1.webp" /></a>
@@ -51,6 +83,7 @@
     </div>
     <footer>
       <p>made with <3 by zara zahed</p>
+
       <p>contact me at <a href="mailto:z@hackclub.com">z@hackclub.app</a></p>
     </footer>
   </body>
