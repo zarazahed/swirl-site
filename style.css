@@ -2,7 +2,6 @@
   position: fixed;
   right: 200px;
   width: 300px;
-  top: 50%
   height: auto;
   max-width: 700px;
   display: inline-block;
@@ -86,56 +85,85 @@ p {
   cursor: url("cursor (1).cur"), auto;
 }
 
-
 footer {
   text-align: center;
-    margin: 30px;
+  margin: 30px;
   background-color: rgb(219, 201, 231);
   color: white;
   border-radius: 50px;
-  height:140px;
+  height: 140px;
   align-content: center;
 }
 
 a {
-    color:rgb(171, 109, 187)
+  color: rgb(171, 109, 187);
 }
 
 h2 {
-    color: rgb(131, 135, 144);
-    padding-left: 60px;
+  color: rgb(131, 135, 144);
+  padding-left: 60px;
 }
 
-
 .carousel {
-    width: 300px;
-    height: 300px;
-    margin-left: 60px;
-    position: relative;
-    overflow: hidden;
-    border: 7px solid #ffffff;
-    border-radius: 50px;
+  width: 300px;
+  height: 300px;
+  margin-left: 60px;
+  position: relative;
+  overflow: hidden;
+  border: 7px solid #ffffff;
+  border-radius: 50px;
 }
 
 .carousel img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0;
-    animation: fade 12.5s infinite;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  animation: fade 12.5s infinite;
 }
 
-.carousel img:nth-child(1) { animation-delay: 0s; }
-.carousel img:nth-child(2) { animation-delay: 2.5s; }
-.carousel img:nth-child(3) { animation-delay: 5s; }
-.carousel img:nth-child(4) { animation-delay: 7.5s; }
-.carousel img:nth-child(5) { animation-delay: 10s; }
+.carousel img:nth-child(1) {
+  animation-delay: 0s;
+}
+.carousel img:nth-child(2) {
+  animation-delay: 2.5s;
+}
+.carousel img:nth-child(3) {
+  animation-delay: 5s;
+}
+.carousel img:nth-child(4) {
+  animation-delay: 7.5s;
+}
+.carousel img:nth-child(5) {
+  animation-delay: 10s;
+}
 
 @keyframes fade {
-    0% { opacity: 0; }
-    4% { opacity: 1; }
-    20% { opacity: 1; }
-    24% { opacity: 0; }
-    100% { opacity: 0; }
+  0% {
+    opacity: 0;
+  }
+  4% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  24% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+button {
+  font-family: "Sour Gummy", sans-serif;
+  margin-left: 60px;
+  margin-bottom: 60px;
+  margin-top: -20px;
+  padding: 20px;
+  border-radius: 20px;
+  font-size: 20px;
+  border: none;
 }
