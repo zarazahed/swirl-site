@@ -1,0 +1,54 @@
+.main-image {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  width: 100px;
+  height: auto;
+  max-width: 200px;
+  transform: translateY(-50%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.main-image:hover {
+  transform: translateY(-50%) scale(1.2);
+}
+
+.options {
+  background-color: rgb(176, 176, 254);
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+  padding-block: 50px;
+  border-radius: 60px;
+}
+
+.option {
+  width: 100px;
+  height: 100px;
+  flex-shrink: 0;
+}
+
+.option img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  transition: transform 1s ease-in-out;
+}
+
+.option:hover {
+  transform: scale(1.6);
+}
+
+h1 {
+  color: rgb(173, 58, 154);
+  padding-left: 60px;
+  padding-top: 60px;
+}
+
+* {
+  font-family: "Sour Gummy", sans-serif;
+}
