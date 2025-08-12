@@ -14,17 +14,17 @@
 }
 
 .options {
-  background-color: rgb(176, 176, 254);
+  background-color: rgb(180, 190, 223);
   display: flex;
-  gap: 60px;
+  gap: 50px;
   align-items: center;
   width: 70%;
-  max-width: 650px;
+  max-width: 760px;
   justify-content: center;
   align-items: center;
   padding-block: 50px;
   border-radius: 60px;
-  margin: 80px;
+  margin: 80px auto;
 }
 
 .option {
@@ -38,19 +38,27 @@
   height: 150px;
   object-fit: contain;
   display: block;
-  transition: transform 1s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 
-.option:hover {
+.option img:hover {
   transform: scale(1.4);
 }
 
 h1 {
-  color: rgb(173, 58, 154);
+  color: rgb(26, 70, 157);
   padding-left: 60px;
   padding-top: 60px;
+  font-size: 40px;
+}
+
+p {
+  color: rgb(90, 123, 188);
+  padding-left: 60px;
+  font-size: 20px;
 }
 
 * {
   font-family: "Sour Gummy", sans-serif;
+  cursor: url("cursor (1).cur"), auto;
 }
