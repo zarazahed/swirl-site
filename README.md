@@ -7,14 +7,16 @@
 > There are pages for My Melody, Pompompurin, and Cinnamoroll.
 > Here are some screenshots!
 >
-> Will add soon
+> ![Screenshot of the home](ss1.png)
+> ![Screenshot of the Cinnamoroll page](ss2.png)
+> ![Screenshot of the Pompompurin page](ss3.png)
 >
 ### How you can view my project
 > Click here: https://zarazahed.github.io/swirl-site/index.html
 > 
 ### Why I made my project:
-> I wanted to play around with CSS and make something that looks  pretty cute
-> I also felt like trying out some new techniques to elevate a static site
+> I wanted to play around with CSS and make something that looks  pretty cute.
+> I also felt like trying out some new techniques to elevate a static site!
 > 
 ### How I made my project
 > I utilized HTML, CSS, JavaScript to make the site!
